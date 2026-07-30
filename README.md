@@ -30,8 +30,8 @@
 ### Vercel (auto-deploy via GitHub)
 1. Push `index.html` to repo `UnDevelop3d87/Fresno-Resource-Hub`
 2. Vercel Settings → Framework: **Other**, Build Command: **(blank)**, Output: **`.`**
-3. Rename project to **`five59inehub`**
-4. Point domain **five59inehub.com** at Vercel DNS
+3. Rename project to **`5fiveNineHub🌻`**
+4. Point domain **5five9inehub.netlify.app** at Vercel DNS
 
 > Test on your own phone BEFORE marketing at venues. Click every page + every link.
 
