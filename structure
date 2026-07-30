@@ -1,25 +1,40 @@
-FRH/
+Five59ineHub/
 │
 ├── index.html
-├── resources.html
-├── housing.html
-├── employment.html
-├── food.html
-├── emergency.html
-├── donate.html
-├── admin.html
-│
 ├── css/
 │   ├── style.css
-│   ├── cards.css
-│   └── animations.css
+│   ├── animations.css
+│   ├── components.css
+│   └── dashboard.css
 │
 ├── js/
 │   ├── app.js
 │   ├── firebase.js
 │   ├── auth.js
 │   ├── resources.js
-│   └── admin.js
+│   ├── search.js
+│   ├── ai.js
+│   └── emergency.js
 │
-├── images/
-└── icons/
+├── pages/
+│   ├── housing.html
+│   ├── employment.html
+│   ├── food.html
+│   ├── health.html
+│   ├── mental-health.html
+│   ├── transportation.html
+│   ├── education.html
+│   ├── legal.html
+│   ├── veterans.html
+│   ├── events.html
+│   ├── emergency.html
+│   ├── profile.html
+│   └── admin.html
+│
+├── assets/
+│   ├── svg/
+│   ├── icons/
+│   ├── images/
+│   └── lottie/
+│
+└── firebase.json
