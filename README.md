@@ -124,4 +124,5 @@ Fresno Resource Hub™ · Five59ine™ · Five59ineHub™ · The Hub™ · be PR
 
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab087c9f-a27c-43af-b8e9-f645413c67e5/deploy-status)](https://app.netlify.com/projects/frhhub/deploys)
 *Built with 🌻 for Fresno County. Not affiliated with any government agency.*
