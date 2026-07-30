@@ -1,0 +1,49 @@
+Fresno Resource Hub Asset Pack - README
+
+Files included:
+- frh-icon.svg
+- frh-hero.svg
+- frh-theme.css
+- frh-manifest.json
+
+Recommended raster export sizes:
+- Icon: 48, 72, 96, 128, 192, 512 (PNG and WebP)
+- Hero: 1600x700 (PNG and WebP)
+- Favicons: 16x16, 32x32, apple-touch-icon 180x180
+
+Export commands (ImageMagick / Inkscape / cwebp):
+
+1) Using Inkscape (recommended for exact SVG -> PNG):
+- Icon PNGs:
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-48.png --export-width=48 --export-height=48
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-72.png --export-width=72 --export-height=72
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-96.png --export-width=96 --export-height=96
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-128.png --export-width=128 --export-height=128
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-192.png --export-width=192 --export-height=192
+  inkscape frh-icon.svg --export-type=png --export-filename=frh-icon-512.png --export-width=512 --export-height=512
+
+- Hero PNG:
+  inkscape frh-hero.svg --export-type=png --export-filename=frh-hero-1600x700.png --export-width=1600 --export-height=700
+
+2) Convert PNG -> WebP (cwebp):
+  cwebp -q 85 frh-icon-192.png -o frh-icon-192.webp
+  cwebp -q 85 frh-icon-512.png -o frh-icon-512.webp
+  cwebp -q 85 frh-hero-1600x700.png -o frh-hero-1600x700.webp
+
+3) Create favicons:
+  inkscape frh-icon.svg --export-type=png --export-filename=favicon-32x32.png --export-width=32 --export-height=32
+  inkscape frh-icon.svg --export-type=png --export-filename=favicon-16x16.png --export-width=16 --export-height=16
+  inkscape frh-icon.svg --export-type=png --export-filename=apple-touch-icon-180.png --export-width=180 --export-height=180
+
+4) Optimize SVG (SVGO):
+  svgo frh-icon.svg -o frh-icon.svg
+  svgo frh-hero.svg -o frh-hero.svg
+
+5) Optional PNG optimization:
+  - macOS: ImageOptim (drag & drop)
+  - Linux: pngquant --quality=65-80 --output frh-icon-192.png --force frh-icon-192.png
+
+Notes:
+- Export at 72dpi sRGB for web/app use.
+- Keep the original SVGs as the single source of truth for future exports.
+- All assets provided are free for your use in Fresno Resource Hub / 5Five9ineHub projects.
