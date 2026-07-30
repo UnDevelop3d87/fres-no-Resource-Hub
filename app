@@ -3334,7 +3334,7 @@
     <a class="logo" href="#" onclick="setCategory('all',document.querySelector('[onclick*=\'all\']'));scrollTo({top:0,behavior:'smooth'});return false">
       <div class="logo-icon">🌻</div>
       <div class="logo-text">
-        FresnoResourceHub
+        Fresno Resource Hub
         <span class="logo-sub">Community Based Resource Center for EVERYONE</span>
       </div>
     </a>
