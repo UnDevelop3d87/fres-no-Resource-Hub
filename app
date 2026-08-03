@@ -8,6 +8,7 @@
      ADD TO HOME SCREEN (PWA)
      Allows users on iOS and Android to install the Site
      as an app-like shortcut on their home screen
+Allows users to return to the top of page with one-click
 ══════════════════════════════════ -->
 <meta name="theme-color" content="#1A6BAB">
 <meta name="apple-mobile-web-app-capable" content="yes">
