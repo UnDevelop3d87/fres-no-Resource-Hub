@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+FRESNO RESOURCE HUB™ FIVE59INE™
+Community Based Resource Center for EVERYONE
+©2026 Fresno Resource Hub™ / Five59ine™. All Rights Reserved.
+Original work first created and published: 2026.
+OWNERSHIP DECLARATION:
+The creator owns all related content, the names, the sunflower
+logo, all original designs, written content, layout, the overall
+web application concept, and the complete source code.
+CLAIMED MARKS (TM):
+"Fresno Resource Hub" "Five59ine" "F.R.H." "FRH" "5.59"
+and the associated sunflower logo.
+This source code, its design, structure, and creative arrangement
+are the exclusive intellectual property of the creator.
+Unauthorized copying, reproduction, redistribution, rebranding,
+or commercial use is strictly prohibited without express written
+permission.
+Official URL: https://5five9inehub.netlify.app
+Contact: fresnoresourcehub@mailfence.com
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- ADD TO HOME SCREEN (PWA) -->
+<meta name="theme-color" content="#1A6BAB">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="5FIVE9INEHUB">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Fresno Resource Hub">
+<meta name="description" content="Free community resource infrastructure connecting Fresno County residents to food, housing, jobs, health, legal aid, and more. No account required.">
+
+<!-- Apple touch icons (sunflower as data URI fallback) -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' x='0' fill='%231A6BAB'/%3E%3Ctext x='90' y='130' font-size='110' text-anchor='middle'%3E🌻%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌻%3C/text%3E%3C/svg%3E">
+
+<!-- Inline web app manifest -->
+<link rel="manifest" href='data:application/manifest+json,{"name":"Fresno Resource Hub","short_name":"FRH","description":"Community resource infrastructure for Fresno County","start_url":"/","display":"standalone","background_color":"%231A6BAB","theme_color":"%231A6BAB","orientation":"portrait","icons":[{"src":"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 192 192%27%3E%3Crect width=%27192%27 height=%27192%27 rx=%2742%27 fill=%27%231A6BAB%27/%3E%3Ctext x=%2796%27 y=%27140%27 font-size=%27120%27 text-anchor=%27middle%27%3E🌻%3C/text%3E%3C/svg%3E","sizes":"192x192","type":"image/svg+xml"}]}'>
+
+<title>5FIVE9INEHUB 🌻 ONLY</title>
+
+<!-- GOOGLE ANALYTICS 4 -->
+<script>
+const GA_MEASUREMENT_ID = 'G-P2P44QNKBE';
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID.indexOf('G-') === 0) {
+    const gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+    gtag('js', new Date());
+    gtag('config', GA_MEASUREMENT_ID, {
+        page_title: 'Fresno Resource Hub',
+        send_page_view: true
+    });
+}
+function trackCategory(cat) { if (GA_MEASUREMENT_ID) gtag('event', 'category_click', { event_category: 'Navigation', event_label: cat }); }
+function trackCall(orgName) { if (GA_MEASUREMENT_ID) gtag('event', 'tap_to_call', { event_category: 'Engagement', event_label: orgName }); }
+function trackSave(orgName) { if (GA_MEASUREMENT_ID) gtag('event', 'save_resource', { event_category: 'Engagement', event_label: orgName }); }
+function trackForm(formType) { if (GA_MEASUREMENT_ID) gtag('event', 'form_submit', { event_category: 'Contact', event_label: formType }); }
+function trackSearch(query) { if (GA_MEASUREMENT_ID && query.length > 2) gtag('event', 'search', { search_term: query }); }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Alice&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --sun: #F5A623;
+    --sky: #1A6BAB;
+    --earth: #2D4A1E;
+    --warm: #F7F3ED;
+    --cream: #FEFCF8;
+    --dark: #1C1C1E;
+    --mid: #4A4A52;
+    --soft: #8A8A92;
+    --border: #E5DDD4;
+    --card: #FFFFFF;
+    --red: #C0392B;
+    --green: #27AE60;
+    --teal: #16A085;
+    --purple: #8E44AD;
+    --orange: #E67E22;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm);
+    color: var(--dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    background: var(--sky);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,.18);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(12px, 3vw, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: clamp(56px, 8vw, 68px);
+    gap: clamp(8px, 2vw, 16px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 1.5vw, 10px);
+    text-decoration: none;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.logo-icon {
+    width: clamp(28px, 5vw, 38px);
+    height: clamp(28px, 5vw, 38px);
+    background: transparent;
+    border-radius: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: clamp(20px, 4vw, 28px);
+    flex-shrink: 0;
+    animation: sunflowerBob 2.8s ease-in-out infinite;
+}
+
+.logo-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(11px, 2.2vw, 18px);
+    color: #fff;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo-sub {
+    font-size: clamp(8px, 1.4vw, 10px);
+    font-weight: 400;
+    opacity: .75;
+    display: block;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.header-search {
+    flex: 1;
+    max-width: 400px;
+    min-width: 0;
+    position: relative;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 9px 16px 9px 40px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255,255,255,.18);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(12px, 1.8vw, 14px);
+    outline: none;
+    transition: background .2s;
+}
+
+.header-search input::placeholder { color: rgba(255,255,255,.6); }
+.header-search input:focus { 
+    background: rgba(255,255,255,.32) !important; 
+    box-shadow: 0 0 0 3px rgba(245,166,35,.35); 
+}
+
+.header-search .s-icon {
+    position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    color: rgba(255,255,255,.7); font-size: 15px; pointer-events: none;
+}
+
+.header-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Add remaining functional CSS blocks correctly nested */
+.hero {
+    background: linear-gradient(180deg, #1a1438 0%, #3d2b5c 25%, #7c4a6e 50%, #c2683f 72%, #e8943a 88%, #f5b942 100%);
+    padding: 72px 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+.hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 6vw, 58px);
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.1;
+    position: relative;
+    animation: fadeSlideDown .7s .1s ease both;
+}
+
+@keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sunflowerBob {
+    0%, 100% { transform: translateY(0) scale(1); }
+    40% { transform: translateY(-5px) scale(1.08); }
+    70% { transform: translateY(-2px) scale(1.03); }
+}
+
+/* Ensure global box sizing covers mobile properly */
+html, body { overflow-x: hidden; width: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+
+@media (max-width: 480px) {
+    .header-inner { padding: 0 12px; height: 52px; gap: 8px; }
+    .header-search { display: none; }
+    .logo-sub { display: none; }
+    .logo-text { font-size: 13px; }
+    .logo-icon { font-size: 22px; width: 26px; height: 26px; }
+    .hero { padding: 24px 14px 0; min-height: 300px; }
+    .hero h1 { font-size: 26px; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">🌻</div>
+                <div class="logo-text">5FIVE9INEHUB</div>
+            </a>
+            <div class="header-search">
+                <span class="s-icon">🔍</span>
+                <input type="text" placeholder="Search resources...">
+            </div>
+            <div class="header-actions">
+                <button class="btn-donate-header">Donate</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>FRESNO RESOURCE HUB</h1>
+                <p>Community Based Resource Center for <strong>EVERYONE</strong>.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <p>©2026 5FIVE9INEHUB. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
