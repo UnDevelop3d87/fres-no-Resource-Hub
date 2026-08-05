@@ -23,7 +23,7 @@ Allows users to return to the top of page with one-click
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌻%3C/text%3E%3C/svg%3E">
 
 <!-- Inline web app manifest -->
-<link rel="manifest" href='data:application/manifest+json,{"name":"Fresno Resource Hub","short_name":"FRH","description":"Community resource directory for Fresno County","start_url":"/","display":"standalone","background_color":"%231A6BAB","theme_color":"%231A6BAB","orientation":"portrait","icons":[{"src":"data:image/svg+xml,%253Csvg xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27 viewBox%3D%270 0 192 192%27%253E%253Crect width%3D%27192%27 height%3D%27192%27 rx%3D%2742%27 fill%3D%27%25231A6BAB%27%2F%253E%253Ctext x%3D%2796%27 y%3D%27140%27 font-size%3D%27120%27 text-anchor%3D%27middle%27%253E%25F0%259F%258C%25BB%253C%2Ftext%253E%253C%2Fsvg%253E","sizes":"192x192","type":"image/svg+xml"}]}'>
+<link rel="manifest" href='data:application/manifest+json,{"name":"Fresno Resource Hub🌻","short_name":"FRH","description":"Community resource directory for Fresno County","start_url":"/","display":"standalone","background_color":"%231A6BAB","theme_color":"%231A6BAB","orientation":"portrait","icons":[{"src":"data:image/svg+xml,%253Csvg xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27 viewBox%3D%270 0 192 192%27%253E%253Crect width%3D%27192%27 height%3D%27192%27 rx%3D%2742%27 fill%3D%27%25231A6BAB%27%2F%253E%253Ctext x%3D%2796%27 y%3D%27140%27 font-size%3D%27120%27 text-anchor%3D%27middle%27%253E%25F0%259F%258C%25BB%253C%2Ftext%253E%253C%2Fsvg%253E","sizes":"192x192","type":"image/svg+xml"}]}'>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -48,7 +48,7 @@ Allows users to return to the top of page with one-click
     document.head.appendChild(gaScript);
     gtag('js', new Date());
     gtag('config', GA_MEASUREMENT_ID, {
-      page_title: 'Fresno Resource Hub',
+      page_title: 'Fresno Resource Hub🌻',
       send_page_view: true
     });
   }
@@ -319,7 +319,7 @@ Allows users to return to the top of page with one-click
   }
   .hero-orb-3 {
     width: 200px; height: 200px;
-    background: radial-gradient(circle, rgba(255,255,255,.08), transparent);
+    background: radial-gradient(circle,   rgba(255,255,255,.08), transparent);
     bottom: 60px; left: 40%;
     animation-delay: -5s;
   }
@@ -3335,7 +3335,7 @@ Allows users to return to the top of page with one-click
     <a class="logo" href="#" onclick="setCategory('all',document.querySelector('[onclick*=\'all\']'));scrollTo({top:0,behavior:'smooth'});return false">
       <div class="logo-icon">🌻</div>
       <div class="logo-text">
-        Fresno Resource Hub
+        Fresno Resource Hub🌻
         <span class="logo-sub">Community Based Resource Center for EVERYONE</span>
       </div>
     </a>
@@ -3344,7 +3344,7 @@ Allows users to return to the top of page with one-click
       <input type="text" id="searchInput" placeholder="Search resources, organizations…" oninput="filterAll()">
     </div>
     <div class="header-actions">
-      <button class="btn-donate-header" onclick="openDonateModal()" title="Support Fresno Resource Hub">💛 Donate</button>
+      <button class="btn-donate-header" onclick="openDonateModal()" title="Support Fresno Resource Hub🌻">💛 Donate</button>
       <div id="accountBtn"></div>
     </div>
   </div>
@@ -3433,7 +3433,7 @@ Allows users to return to the top of page with one-click
     <!-- Animated sunflower badge -->
     <div class="hero-badge">
       <span class="hero-badge-flower">🌻</span>
-      <span>Fresno Resource Hub</span>
+      <span>Fresno Resource Hub🌻</span>
     </div>
 
     <h1>Help Is <span class="hero-highlight">Here</span> for<br>Fresno Residents</h1>
@@ -3792,7 +3792,7 @@ Allows users to return to the top of page with one-click
           <div class="donate-banner-text">
             <div class="donate-banner-title">This Resource Hub is Free — and Always Will Be</div>
             <div class="donate-banner-sub">
-              Fresno Resource Hub is a <strong>community-funded passion project</strong> — built, maintained, and paid for out of pocket to ensure every Fresno County resident has free, barrier-free access to the help they need. There are no ads, no paywalls, and no government funding behind this. If this tool has helped you or someone you love, a small contribution goes a long way toward keeping the lights on.
+              Fresno Resource Hub🌻 is a <strong>community-funded passion project</strong> — built, maintained, and paid for out of pocket to ensure every Fresno County resident has free, barrier-free access to the help they need. There are no ads, no paywalls, and no government funding behind this. If this tool has helped you or someone you love, a small contribution goes a long way toward keeping the lights on.
             </div>
             <div class="donate-amounts">
               <button class="donate-amt" onclick="openDonateModal(5)">$5</button>
@@ -4238,7 +4238,7 @@ Allows users to return to the top of page with one-click
     <div class="mission-card">
       <h2>🌿 Who We Are</h2>
       <p>
-        Fresno Resource Hub is an <strong>independent, community-driven project</strong> — not a government agency, not a nonprofit corporation, and not a funded organization. It was built by a single Fresno County resident who believes that access to help should be as simple as opening a website.
+        Fresno Resource Hub🌻 is an <strong>independent, community-driven project</strong> — not a government agency, not a nonprofit corporation, and not a funded organization. It was built by a single Fresno County resident who believes that access to help should be as simple as opening a website.
       </p>
       <p>
         We remain deliberately <strong>anonymous</strong> because this platform was never meant to be about us — it's about <em>you</em>, your neighbors, your family, and your community. The faces behind this project are Fresno residents, just like you.
@@ -4298,7 +4298,7 @@ Allows users to return to the top of page with one-click
       </p>
       <div style="margin-top:16px;">
         <button class="donate-cta-btn" onclick="openDonateModal()" style="font-size:14px; padding:12px 22px;">
-          💛 Support Fresno Resource Hub
+          💛 Support Fresno Resource Hub🌻
         </button>
       </div>
     </div>
@@ -4350,7 +4350,7 @@ Allows users to return to the top of page with one-click
 
     <div class="mission-hero about-hero">
       <span class="mission-sunflower">💬</span>
-      <h1>About <span>Fresno Resource Hub</span></h1>
+      <h1>About <span>Fresno Resource Hub🌻</span></h1>
       <p>An honest look at who we are, why this exists, and what we believe.</p>
     </div>
 
@@ -4358,7 +4358,7 @@ Allows users to return to the top of page with one-click
     <div class="mission-card">
       <h2>📖 The Story Behind the Hub</h2>
       <p>
-        Fresno Resource Hub started with a simple, frustrating moment — watching a loved one struggle to find help they desperately needed and not knowing where to send them. The information existed, somewhere. But it was scattered across dozens of government websites, outdated flyers, and word-of-mouth recommendations that may or may not still be accurate.
+        Fresno Resource Hub🌻 started with a simple, frustrating moment — watching a loved one struggle to find help they desperately needed and not knowing where to send them. The information existed, somewhere. But it was scattered across dozens of government websites, outdated flyers, and word-of-mouth recommendations that may or may not still be accurate.
       </p>
       <p>
         For a community as big and rich as Fresno County — over <strong>1 million residents</strong> with hundreds of nonprofits, churches, government programs, and grassroots organizations doing incredible work — there was no <strong>single place</strong> a regular person could go to find help quickly and confidently.
@@ -4381,7 +4381,7 @@ Allows users to return to the top of page with one-click
         This platform isn't about the person who built it. It's about <strong>you</strong>, your neighbors, the families this serves, and the organizations doing the real work on the ground. Putting a face on this project would shift the focus, invite ego into the equation, and make it harder for people to trust that this is genuinely <em>for the community</em> — not a personal brand or a stepping stone to something else.
       </p>
       <p>
-        What you should know is this: the person building Fresno Resource Hub is a <strong>local Fresno County resident</strong>, born and raised in the Valley, who knows what it's like to need help and not know where to find it. Every category on this site was added because someone real needed it. Every phone number was verified. Every link was tested.
+        What you should know is this: the person building Fresno Resource Hub🌻 is a <strong>local Fresno County resident</strong>, born and raised in the Valley, who knows what it's like to need help and not know where to find it. Every category on this site was added because someone real needed it. Every phone number was verified. Every link was tested.
       </p>
       <p>
         We're not a corporation. We're not a registered 501(c)(3) (yet). We're not affiliated with any government agency, political party, or religious organization. We're just <strong>a neighbor with a laptop and a sincere desire to help</strong>.
@@ -4524,7 +4524,7 @@ Allows users to return to the top of page with one-click
       </div>
       <p style="margin-top:20px;text-align:center;">
         <button class="donate-cta-btn" onclick="openDonateModal()" style="font-size:14px; padding:12px 22px;">
-          💛 Support Fresno Resource Hub
+          💛 Support Fresno Resource Hub🌻
         </button>
       </p>
     </div>
@@ -4536,7 +4536,7 @@ Allows users to return to the top of page with one-click
         Thank you for being here. Thank you for caring about your community enough to seek out help — for yourself or someone you love. That single act of looking for resources is, in itself, an act of strength and love.
       </p>
       <p style="font-style:italic; color:#92400E; font-weight:600; font-size:15px;">
-        Welcome to Fresno Resource Hub. You belong here.
+        Welcome to Fresno Resource Hub🌻. You belong here.
       </p>
     </div>
 
@@ -4709,12 +4709,12 @@ Allows users to return to the top of page with one-click
     <div class="modal-head" style="background:linear-gradient(135deg,#1A6BAB,#0D3B6E);">
       <div>
         <h2>📲 Add to Home Screen</h2>
-        <p>Get Fresno Resource Hub right on your phone</p>
+        <p>Get Fresno Resource Hub🌻 right on your phone</p>
       </div>
       <button class="modal-close" onclick="document.getElementById('installOverlay').classList.remove('open')">✕</button>
     </div>
     <div class="modal-body">
-      <p style="color:var(--mid);font-size:13px;line-height:1.7;margin-bottom:18px;">Install Fresno Resource Hub as an app-style shortcut on your phone — opens in one tap, looks like a real app, and works offline for browsing saved resources.</p>
+      <p style="color:var(--mid);font-size:13px;line-height:1.7;margin-bottom:18px;">Install Fresno Resource Hub🌻 as an app-style shortcut on your phone — opens in one tap, looks like a real app, and works offline for browsing saved resources.</p>
 
       <!-- iOS / Safari instructions -->
       <div class="install-step-card" id="installIOS">
@@ -4751,7 +4751,7 @@ Allows users to return to the top of page with one-click
           <div class="install-step-title">Desktop (Chrome / Edge)</div>
           <ol class="install-step-list">
             <li>Look for the <strong>install icon</strong> ⬇️ in the address bar</li>
-            <li>Or click <strong>three dots menu</strong> ⋮ → <strong>"Install Fresno Resource Hub"</strong></li>
+            <li>Or click <strong>three dots menu</strong> ⋮ → <strong>"Install Fresno Resource Hub🌻"</strong></li>
             <li>Click <strong>"Install"</strong> to confirm</li>
           </ol>
         </div>
@@ -4773,7 +4773,7 @@ Allows users to return to the top of page with one-click
     <div class="donate-modal-head">
       <button class="modal-close" onclick="document.getElementById('donateOverlay').classList.remove('open')">✕</button>
       <div class="donate-modal-sunflower">🌻</div>
-      <h2>Support Fresno Resource Hub</h2>
+      <h2>Support Fresno Resource Hub🌻</h2>
       <p>Every dollar keeps this community tool free for everyone</p>
     </div>
 
@@ -4782,7 +4782,7 @@ Allows users to return to the top of page with one-click
       <!-- Mission statement -->
       <div class="donate-mission">
         <p>
-          Fresno Resource Hub was built from the ground up as a <strong>free, no-barrier community service</strong> — 
+          Fresno Resource Hub🌻 was built from the ground up as a <strong>free, no-barrier community service</strong> — 
           because access to help should never depend on your ability to pay for it. This platform is 
           independently maintained, funded entirely out of pocket, and given freely to the Fresno County 
           community with no advertisements, no data selling, and no strings attached.
@@ -4857,7 +4857,7 @@ Allows users to return to the top of page with one-click
           </div>
           <div class="donate-qr-info">
             <div class="donate-qr-tag">$FresnoResourceHub</div>
-            <div class="donate-qr-desc">Point your camera at the code to open Cash App and send any amount directly to Fresno Resource Hub.</div>
+            <div class="donate-qr-desc">Point your camera at the code to open Cash App and send any amount directly to Fresno Resource Hub🌻.</div>
             <div class="donate-qr-steps">
               <span>1️⃣ Open Camera</span>
               <span>2️⃣ Scan code</span>
@@ -4869,7 +4869,7 @@ Allows users to return to the top of page with one-click
 
       <p style="text-align:center;font-size:11px;color:var(--soft);margin-top:16px;line-height:1.7;">
         🔒 Payments processed securely through your chosen platform — we never see or store your account info.<br>
-        Fresno Resource Hub is an independent community project. Donations are not tax-deductible.
+        Fresno Resource Hub🌻 is an independent community project. Donations are not tax-deductible.
       </p>
     </div>
   </div>
@@ -6414,7 +6414,7 @@ function doRegister() {
   if (!email.includes('@') || !email.includes('.')) { showToast('⚠️ Please enter a valid email address'); return; }
   const greeting = document.getElementById('regGreeting').value.trim();
   user = { name, email,
-    greeting: greeting || `Hey, ${name.split(' ')[0]}! Welcome to Fresno Resource Hub 🌻`,
+    greeting: greeting || `Hey, ${name.split(' ')[0]}! Welcome to Fresno Resource Hub🌻 🌻`,
     notifs: {
       food: document.getElementById('notif1').classList.contains('on'),
       emergency: document.getElementById('notif2').classList.contains('on'),
@@ -6515,7 +6515,7 @@ function showEmailConfirmModal(name, email) {
           📂 <strong>Can't find it?</strong> Check your spam or promotions folder. Add us to your contacts to ensure delivery.
         </div>
         <div style="display:flex;gap:10px;">
-          <button onclick="document.getElementById('emailConfirmModal').remove();showToast('✅ Welcome to Fresno Resource Hub, ${name.split(' ')[0]}!');" style="flex:1;padding:12px;background:#1A6BAB;color:#fff;border:none;border-radius:10px;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;cursor:pointer;">Got it! Let's go →</button>
+          <button onclick="document.getElementById('emailConfirmModal').remove();showToast('✅ Welcome to Fresno Resource Hub🌻, ${name.split(' ')[0]}!');" style="flex:1;padding:12px;background:#1A6BAB;color:#fff;border:none;border-radius:10px;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;cursor:pointer;">Got it! Let's go →</button>
           <button onclick="resendConfirm('${email}');" style="padding:12px 16px;background:transparent;border:1.5px solid #E5DDD4;border-radius:10px;font-family:'Syne',sans-serif;font-weight:600;font-size:12px;cursor:pointer;color:#4A4A52;">Resend</button>
         </div>
       </div>
@@ -6560,7 +6560,7 @@ function scheduleAlerts() {
       // Browser push notification
       if (Notification.permission === 'granted') {
         try {
-          new Notification(`Fresno Resource Hub ${alert.icon}`, {
+          new Notification(`Fresno Resource Hub🌻 ${alert.icon}`, {
             body: alert.body,
             icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌻</text></svg>',
             tag: alert.cat,
@@ -6639,7 +6639,7 @@ function requestNotifPermission() {
     Notification.requestPermission().then(p => {
       if (p === 'granted') {
         setTimeout(() => {
-          new Notification('Fresno Resource Hub 🌻', {
+          new Notification('Fresno Resource Hub🌻 🌻', {
             body: `Welcome ${user ? user.name.split(' ')[0] : ''}! You'll now get alerts for new resources, giveaways, and events in Fresno County.`,
             icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌻</text></svg>'
           });
@@ -7036,7 +7036,7 @@ renderCards();
     <div class="footer-brand">
       <a class="logo-f" href="#" onclick="setCategory('all',document.querySelector('[onclick*=\'all\']'));scrollTo({top:0,behavior:'smooth'});return false">
         <div class="logo-f-icon">🌻</div>
-        <div class="logo-f-text">Fresno Resource Hub<span class="logo-f-sub">Fresno County's Free Resource Directory</span></div>
+        <div class="logo-f-text">Fresno Resource Hub🌻<span class="logo-f-sub">Fresno County's Free Resource Directory</span></div>
       </a>
       <p>A free, no-signup-required directory of local organizations helping Fresno County residents with food, housing, utility bills, jobs, mental health, and more.</p>
       <div class="footer-social">
@@ -7131,7 +7131,7 @@ renderCards();
           <select id="pt-type">
             <option value="">Partnership type…</option>
             <option>List our organization in the directory</option>
-            <option>Sponsor or co-brand Fresno Resource Hub</option>
+            <option>Sponsor or co-brand Fresno Resource Hub🌻</option>
             <option>Community outreach collaboration</option>
             <option>Government / city partnership</option>
             <option>Media or press inquiry</option>
@@ -7173,7 +7173,7 @@ renderCards();
   <div class="footer-divider"></div>
 
   <div class="footer-bottom">
-    <p>© 2026 Fresno Resource Hub · Made with 🌻 for Fresno County residents · Not affiliated with any government agency</p>
+    <p>© 2026 Fresno Resource Hub🌻 · Made with 🌻 for Fresno County residents · Not affiliated with any government agency</p>
     <div class="footer-bottom-links">
       <a href="#" onclick="openLegal('privacy');return false">Privacy Policy</a>
       <a href="#" onclick="openLegal('terms');return false">Terms of Use</a>
@@ -7186,11 +7186,11 @@ renderCards();
   <!-- Fine print / legal disclaimer strip -->
   <div class="footer-finefine">
     <div class="footer-finefine-inner">
-      <p><strong>Important Disclaimer:</strong> Fresno Resource Hub ("the Site") is an independent, volunteer-run community directory provided free of charge for informational purposes only. We are not a government agency, healthcare provider, legal service, financial institution, or licensed referral service, and we are not affiliated with, endorsed by, or sponsored by the City of Fresno, the County of Fresno, the State of California, or any organization listed on this Site.</p>
+      <p><strong>Important Disclaimer:</strong> Fresno Resource Hub🌻 ("the Site") is an independent, volunteer-run community directory provided free of charge for informational purposes only. We are not a government agency, healthcare provider, legal service, financial institution, or licensed referral service, and we are not affiliated with, endorsed by, or sponsored by the City of Fresno, the County of Fresno, the State of California, or any organization listed on this Site.</p>
       <p>While we make reasonable efforts to verify and update the contact information, hours, eligibility requirements, and services of the organizations listed, we make <strong>no warranties or guarantees</strong> regarding the accuracy, completeness, availability, or current status of any listing. Information may change without notice. Always contact an organization directly to confirm details before relying on them. Listing on this Site does not constitute an endorsement, recommendation, or guarantee of any organization, its services, staff, or outcomes.</p>
-      <p>In a life-threatening emergency, always call <strong>911</strong>. For mental health or suicide crises, call or text <strong>988</strong>. Use of this Site is entirely at your own risk. To the fullest extent permitted by law, Fresno Resource Hub and its creator disclaim all liability for any loss, injury, or damage arising from the use of, or reliance upon, any information provided here or any interaction with a listed organization.</p>
-      <p>Donations made through Cash App, Venmo, or any other platform are <strong>voluntary gifts</strong> to support the operation of this independent community Site. They are <strong>not tax-deductible charitable contributions</strong>, as Fresno Resource Hub is not a registered 501(c)(3) nonprofit organization. Donations do not purchase any goods, services, or guarantees.</p>
-      <p>By using this Site, you acknowledge and agree to these terms. © 2026 Fresno Resource Hub. All rights reserved. Fresno Resource Hub owns all FRH-related content, logo, designs, and the overall web application concept and creation. "Cash App" is a trademark of Block, Inc. "Venmo" is a trademark of PayPal, Inc. All organization names, logos, and trademarks are the property of their respective owners.</p>
+      <p>In a life-threatening emergency, always call <strong>911</strong>. For mental health or suicide crises, call or text <strong>988</strong>. Use of this Site is entirely at your own risk. To the fullest extent permitted by law, Fresno Resource Hub🌻 and its creator disclaim all liability for any loss, injury, or damage arising from the use of, or reliance upon, any information provided here or any interaction with a listed organization.</p>
+      <p>Donations made through Cash App, Venmo, or any other platform are <strong>voluntary gifts</strong> to support the operation of this independent community Site. They are <strong>not tax-deductible charitable contributions</strong>, as Fresno Resource Hub🌻 is not a registered 501(c)(3) nonprofit organization. Donations do not purchase any goods, services, or guarantees.</p>
+      <p>By using this Site, you acknowledge and agree to these terms. © 2026 Fresno Resource Hub🌻. All rights reserved. Fresno Resource Hub🌻 owns all FRH-related content, logo, designs, and the overall web application concept and creation. "Cash App" is a trademark of Block, Inc. "Venmo" is a trademark of PayPal, Inc. All organization names, logos, and trademarks are the property of their respective owners.</p>
     </div>
   </div>
 
@@ -7236,7 +7236,7 @@ async function submitForm(type) {
     }
 
     subject = `[FRH Feedback] ${fbType || 'General'} — from ${name}`;
-    body = `FEEDBACK SUBMISSION — Fresno Resource Hub\n${'─'.repeat(50)}\nName: ${name}\nEmail: ${email}\nType: ${fbType || 'Not specified'}\n\nMessage:\n${msg}\n\nSent via Fresno Resource Hub`;
+    body = `FEEDBACK SUBMISSION — Fresno Resource Hub🌻\n${'─'.repeat(50)}\nName: ${name}\nEmail: ${email}\nType: ${fbType || 'Not specified'}\n\nMessage:\n${msg}\n\nSent via Fresno Resource Hub🌻`;
     successMsg = '✅ Feedback sent to your Mailfence inbox!';
 
   } else if (type === 'partnership') {
@@ -7251,7 +7251,7 @@ async function submitForm(type) {
     const zip   = document.getElementById('nl-zip').value.trim();
 
     if (!email || !email.includes('@')) {
-      showToast('⚠️ Please enter a valid email');
+      showToast('fresnoresourcehub@mailfence.com');
       return;
     }
 
